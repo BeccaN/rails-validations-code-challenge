@@ -2,9 +2,13 @@
 
 ## Part 1: Conceptual questions
 1. Why do we use validation?
+    - data being sent to db is what we want
 2. What are the [two] general types of "bad user data"?
+    - nil/blank records, anything that could break logic, hackers, bots
 3. When do validations get triggered?
+    - runs right before record is saved to db (save, create, update)
 4. How can we see if and why a record failed validation?
+    - valid?, errors method 
 
 ## Part 2: Expand your boat rental app to include model validations
 * You were contracted to build a rental platform used by internal employees of a boat rental store. Last week's task was to build as much of the CRUD functionality as possible. This week, you will be adding validations to your main model.
